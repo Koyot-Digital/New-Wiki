@@ -1,11 +1,18 @@
+<<<<<<< HEAD
 name: Deploy
+=======
+name: Docker-Deploy
+>>>>>>> prod
 permissions:
     contents: read
 
 on:
     push:
         branches:
+<<<<<<< HEAD
             - main
+=======
+>>>>>>> prod
             - Svelte-Migration
     workflow_dispatch:
 
