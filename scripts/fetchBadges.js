@@ -4,7 +4,6 @@ import sharp from 'sharp'
 
 const UNIVERSE_ID = 5417936082
 const BADGES_DIR = path.join(process.cwd(), 'static', 'images', 'badges')
-const JSON_PATH = path.join(process.cwd(), 'static', 'images', 'badgesData.json')
 
 // simple CLI args: --universe=<id> and --verbose
 const rawArgs = process.argv.slice(2)
@@ -124,9 +123,6 @@ async function main() {
 			})
 		}
 	}
-
-	console.log('Writing JSON data to', JSON_PATH)
-	await fs.writeFile(JSON_PATH, JSON.stringify(results, null, 2))
 	console.log('Badge data and images saved to', BADGES_DIR)
 }
 
