@@ -91,17 +91,17 @@ const teamImg = '/images/hero-banners/npcs.avif'
 	<div class="m-4 p-4 mx-auto border-4 border-base-200 w-full h-fit rounded-md">
 		<h2 class="text-2xl font-bold">Guides</h2>
 		<div
-			class="flex flex-wrap flex-row justify-center items-center h-20 bg-base-200 gap-4 rounded-md my-4"
+			class="flex flex-wrap flex-row justify-center items-center h-auto bg-base-200 gap-4 rounded-md p-4 my-4"
 		>
 			{#each PageData.Guides as page}
-				<div class="h-fit w-fit p-2 px-4 bg-blue-500 align-middle rounded-full">
-					<a href={page.href}>{page.name}</a>
-				</div>
+				<a class="h-fit w-fit p-2 px-4 bg-blue-500 align-middle rounded-full" href={page.href}>
+					{page.name}
+				</a>
 			{/each}
 		</div>
 		<h2 class="text-2xl font-bold">Explainers</h2>
 		<div
-			class="flex flex-wrap flex-row justify-center items-center h-20 bg-base-200 gap-4 rounded-md my-4"
+			class="flex flex-wrap flex-row justify-center items-center h-auto bg-base-200 gap-4 rounded-md p-4 my-4"
 		>
 			{#each PageData.Explainers as page}
 				<div class="h-fit w-fit p-2 px-4 bg-emerald-500 align-middle rounded-full">
@@ -111,7 +111,7 @@ const teamImg = '/images/hero-banners/npcs.avif'
 		</div>
 		<h2 class="text-2xl font-bold">Miscellaneous</h2>
 		<div
-			class="flex flex-wrap flex-row justify-center items-center h-fit p-4 gap-4 rounded-md bg-base-200 my-4"
+			class="flex flex-wrap flex-row justify-center items-center h-auto bg-base-200 gap-4 rounded-md p-4 my-4"
 		>
 			{#each PageData.Misc as page}
 				<div class="h-fit w-fit p-2 px-4 bg-fuchsia-500 align-middle rounded-full">
