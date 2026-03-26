@@ -3,7 +3,7 @@ import '../../../app.css'
 import Header from '$lib/components/Header.svelte'
 import Footer from '$lib/components/Footer.svelte'
 const hero = '/images/hero-banners/badges.avif'
-import badgeData from '$lib/data/badgesData.json' with { type: 'json' }
+import badgeData from '$lib/data/badgesData.yaml' with { type: 'yaml' }
 </script>
 
 <Header heroImg={hero} title="Badges" catchphrase="Gotta get them all!" />
@@ -28,23 +28,18 @@ import badgeData from '$lib/data/badgesData.json' with { type: 'json' }
 				<div class="card-body">
 					<h2 class="card-title">{data.name}</h2>
 					<p class="text-sm">{data.description}</p>
-					{#if data.unobtainable == true}
-						<div class="bg-warning text-warning-content rounded-full max-w-fit">
-							<p class="m-2"><b>Badge Is Unobtainable</b></p>
-						</div>
-					{/if}
 					<div class="divider my-2"></div>
 					<details class="collapse collapse-arrow bg-base-200">
 						<summary class="collapse-title">How to Get</summary>
 						<div class="collapse-content text-sm">
-							{#if data.guideType == 'num'}
+							{#if data.guideType === 'num'}
 								<ol class="list-decimal list-inside">
 									{#each data.guide as guideData}
 										<li>{guideData}</li>
 									{/each}
 								</ol>
 							{/if}
-							{#if data.guideType == 'bullet'}
+							{#if data.guideType === 'bullet'}
 								<ul class="list-disc list-inside">
 									{#each data.guide as guideData}
 										<li>{guideData}</li>
