@@ -1,6 +1,6 @@
 - name: Speedrunner
   description: Blow up the reactor within 8 minutes.
-  image: /images/capybara.png
+  image: /images/badges/Speedruner.png
   guideType: num
   guide:
     - Disable Auto Scram.
