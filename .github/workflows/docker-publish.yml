@@ -20,7 +20,7 @@ jobs:
               with:
                   registry: docker.io
                   username: vfxd9
-                  password: ${{ secrets.DOCKER_PASSWORD }}
+                  password: ${{ secrets.DOCKER_TOKEN }}
 
             - name: Build Docker images
               run: docker build -f dockerfile -t vfxd9/oakrige-wiki:frontend .
