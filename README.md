@@ -1,10 +1,13 @@
 # ONPS Wiki
 
 <<<<<<< HEAD
+
 ## Development
+
 =======
->[!WARNING]
->we are moving over to Svelte (a very nice framework) soon, if posible please wait before adding anything that is not needed, only minor changes will be approved, and no changes will be made from contributors as we move forward with the migration. A preview for the new wiki is avalable [here](https://wiki.scatterbox.dev)
+
+> [!WARNING]
+> we are moving over to Svelte (a very nice framework) soon, if posible please wait before adding anything that is not needed, only minor changes will be approved, and no changes will be made from contributors as we move forward with the migration. A preview for the new wiki is avalable [here](https://wiki.scatterbox.dev)
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -12,7 +15,8 @@
 ![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg?style=for-the-badge)
 ![GitHub issues](https://img.shields.io/github/issues/Koyot-Digital/Wiki?style=for-the-badge)
 ![GitHub stars](https://img.shields.io/github/stars/Koyot-Digital/Wiki?style=for-the-badge)
->>>>>>> prod
+
+> > > > > > > prod
 
 dev-site: https://wiki.scatterbox.dev/ [![Deploy](https://github.com/Koyot-Digital/Wiki/actions/workflows/Deploy.yml/badge.svg)](https://github.com/Koyot-Digital/Wiki/actions/workflows/Deploy.yml)
 
@@ -24,11 +28,12 @@ To ignore a node in HTML use
 ### Resources
 
 <<<<<<< HEAD
+
 - https://svelte.dev
 - https://tailwindcss.com/
 - https://daisyui.com/
-- https://heroicons.com/
-=======
+- # https://heroicons.com/
+
 ## 📂 What You Can (and Can't) Touch
 
 To maximise the chances of your PR being accepted, only modify the files you're permitted to. Think of it as a shared workspace where organisation matters.
@@ -36,30 +41,34 @@ To maximise the chances of your PR being accepted, only modify the files you're 
 ### 🟢 Safe to Edit
 
 **Content Pages:**
+
 - `index.html` - This is your main landing page with all the navigation links
 - `prestart.html`, `startup.html`, `shutdown.html` - The actual procedure pages that people come here to read
 - Any other HTML files that follow the same pattern
 
 **Images:**
+
 - Anything in the `images/` folder - just make sure you're using `.webp` files
 - Keep images related to the game and make sure they're not huge file sizes
 
 **Styling:**
+
 - `style.css` - Feel free to improve the layout or fix broken styles, but try not to completely redesign everything. Just make sure to notify @ShrimpQuack of the change.
 
 ### 🔴 Hands Off (For Now)
 
 **Core Scripts:**
+
 - `script.js` - This handles important functionality, so ping @ShrimpQuack before you mess with it
 - `Middleware.js` - This is routing stuff that keeps the site working properly, if you touch it in your PR there is a 99.9% chance it will be rejected
 
 **Structure:**
+
 - Don't rearrange the header or footer components
 - Avoid adding random scripts or plugins without talking to someone first
 - Don't delete files unless you're really sure about it
 
 ## New to GitHub?
-
 
 This XKCD comic humourously explains Git in a simple way.
 ![XKCD 1597](https://imgs.xkcd.com/comics/git.png)
@@ -78,22 +87,22 @@ Good writing makes all the difference when people are trying to learn procedures
 
 ### 🎯 Voice and Style
 
-* **Talk Directly to the Reader:**
-Use "you" when writing instructions. Instead of "operators should check the pressure," write "you should check the pressure." This makes guides feel more personal.
+- **Talk Directly to the Reader:**
+  Use "you" when writing instructions. Instead of "operators should check the pressure," write "you should check the pressure." This makes guides feel more personal.
 
-* **Keep It Conversational:**
-You don't need to sound like a textbook. Professional doesn't mean boring. Write like you're explaining something to a colleague who's standing right next to you.
+- **Keep It Conversational:**
+  You don't need to sound like a textbook. Professional doesn't mean boring. Write like you're explaining something to a colleague who's standing right next to you.
 
 ### 🏷️ Formatting Standards
 
-* **Headers and Titles:**
-Use Title Case for headings (like "Pre-Start Guide" or "Emergency Situations"). This keeps everything looking consistent and makes navigation easier.
+- **Headers and Titles:**
+  Use Title Case for headings (like "Pre-Start Guide" or "Emergency Situations"). This keeps everything looking consistent and makes navigation easier.
 
-* **Break Things Up:**
-Long walls of text are hard to read, especially when someone's trying to follow a procedure or act fast. Use shorter paragraphs and break up complex ideas into chunks.
+- **Break Things Up:**
+  Long walls of text are hard to read, especially when someone's trying to follow a procedure or act fast. Use shorter paragraphs and break up complex ideas into chunks.
 
-* **Technical Terms:**
-When you use terminology, give a quick explanation or context. Not everyone has the same level of experience, and a brief clarification can save someone A LOT of confusion. Don't just say ECCS, give a meaning or a link to a page with meaning!
+- **Technical Terms:**
+  When you use terminology, give a quick explanation or context. Not everyone has the same level of experience, and a brief clarification can save someone A LOT of confusion. Don't just say ECCS, give a meaning or a link to a page with meaning!
 
 ## 🆘 Getting Help
 
@@ -118,4 +127,5 @@ Remember that only `.webp` files work, and they should be compressed to keep the
 ## License
 
 This project is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
->>>>>>> prod
+
+> > > > > > > prod

@@ -94,7 +94,10 @@ const teamImg = '/images/hero-banners/npcs.avif'
 			class="flex flex-wrap flex-row justify-center items-center h-auto bg-base-200 gap-4 rounded-md p-4 my-4"
 		>
 			{#each PageData.Guides as page}
-				<a class="h-fit w-fit p-2 px-4 bg-blue-500 align-middle rounded-full" href={page.href}>
+				<a
+					class="h-fit w-fit p-2 px-4 bg-blue-500 align-middle rounded-full"
+					href={page.href}
+				>
 					{page.name}
 				</a>
 			{/each}
