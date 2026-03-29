@@ -1,0 +1,21 @@
+- name: Coolant
+  href: /guides/reactor-operations/coolant/
+  oneliner: '"if we didnt have this you would be dead."'
+  photo: /images/systems/coolant.avif
+- name: Electrical
+  href: /guides/reactor-operations/electrical.
+  oneliner: '"Your lights "'
+  photo: /images/systems/electrical.avif
+- name: Emergency Systems
+  href: /guides/reactor-operations/emergency-systems
+  oneliner: '"I made an oopsie... *thermal power 8000tMW*"'
+  photo: /images/systems/emrgncy.avif
+- name: Steam
+  href: /guides/reactor-operations/steam
+  oneliner: '"The #1 way to generate power!"'
+- name: Reactor Operations
+  href: /guides/reactor-operations/
+  oneliner: '"Generic Reactor Operations Manual"'
+- name: Deradiators
+  href: /guides/reactor-operations/deradiators
+  oneliner: '"Liver and kidney of the reactor."'

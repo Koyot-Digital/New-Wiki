@@ -1,7 +1,7 @@
 <script>
 const KDLogo = '/images/icons&logos/Koyot-Digital-Emblem.avif'
 const LicenceImg = '/images/icons&logos/license.svg'
-const GitHub = '/images/icons&logos/github-mark.svg'
+const GitHub = '/images/icons&logos/github-mark-dark.svg'
 const Discord = '/images/icons&logos/Discord.svg'
 </script>
 
@@ -14,7 +14,7 @@ const Discord = '/images/icons&logos/Discord.svg'
 			width="70"
 			height="70"
 			class="inline-block fill-current"
-			style="border-radius: 0.25rem;"
+			style="border-radius: 0.40rem;"
 			src={KDLogo}
 		/>
 		<p class="font-bold">
@@ -34,7 +34,7 @@ const Discord = '/images/icons&logos/Discord.svg'
 					src={GitHub}
 					width="24"
 					height="24"
-					class="not-dark:fill-violet-950 dark:fill-white"
+					class="fill-violet-500 dark:fill-violet-400"
 					alt=""
 				/>
 			</a>
@@ -80,9 +80,3 @@ const Discord = '/images/icons&logos/Discord.svg'
 		/>
 	</aside>
 </footer>
-
-<style>
-.icon {
-	@apply dark:fill-slate-950 fill-white;
-}
-</style>
