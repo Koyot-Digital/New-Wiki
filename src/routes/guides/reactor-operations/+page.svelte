@@ -12,12 +12,11 @@ const headerImg = '/images/hero-banners/control-room.avif'
 	catchphrase="Experience the challenges and responsibilities of managing a nuclear power plant in this immersive Roblox game."
 	button="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station"
 />
-<div class="grid grid-cols-2 gap-4 mx-4">
-	<div class="m-4 gap-4 mx-auto grid grid-rows-4">
+	<div class="m-4 p-4 gap-4 mx-auto flex flex-wrap flex-row">
 		{#each systemsData as card}
 			<div class="card card-border bg-base-100 h-fit">
 				<figure>
-					<img src={card.image} alt="about" class="card-img" />
+					<img src={card.image} alt="{card.oneliner}" class="card-img" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">{card.name}</h2>
@@ -28,7 +27,6 @@ const headerImg = '/images/hero-banners/control-room.avif'
 			</div>
 		{/each}
 	</div>
-</div>
 <Footer />
 
 <style>
