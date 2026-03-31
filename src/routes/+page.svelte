@@ -44,49 +44,6 @@ const teamImg = '/images/hero-banners/npcs.avif'
 				</ul>
 			</div>
 		</div>
-		<div class="card card-border bg-base-100 h-fit">
-			<figure>
-				<img src={teamImg} alt="welcome" class="card-img" />
-			</figure>
-			<div class="card-body">
-				<h2 class="card-title">Welcome to the team</h2>
-				<p>
-					Your first shift starts RIGHT NOW! Though, we're short-staffed at the moment I'm
-					sure you and your big brain can figure it out! Be responsible for overseeing a
-					multi-billion-dollar operation, one of the planet's most potent and delicate
-					energy systems. Every decision matters, from regulating the reactor's behavior,
-					running turbines and their subsidiaries, managing cooling systems, maintaining
-					pumps and valves, and responding to unforeseen emergencies and conditions, all
-					while maintaining <s>strict</s>
-					some safety protocols.
-				</p>
-			</div>
-		</div>
-		<div class="card card-border bg-base-100 h-fit">
-			<figure>
-				<img src={locations} alt="about" class="card-img" />
-			</figure>
-			<div class="card-body">
-				<h2 class="card-title">About the facility</h2>
-				<p>
-					<abbr title="Oakridge Nuclear Power Station">ONPS</abbr>
-					is a Roblox game developed by Koyot Digital. The game places you inside a power plant
-					operating an
-					<abbr
-						title="Russian: 'Реактор большой мощности канальный, РБМК. English: high-power channel-type reactor, RBMK"
-					>
-						RBMK
-					</abbr>
-					-1500. Your goal: keep the facility stable, productive, and safe within a semi-realistic
-					framework. You can play as an operator responsible for monitoring and managing all
-					critical systems: the reactor core, turbines, cooling systems, backup systems, and
-					more. Or play as a security officer and handle unauthorized personnel and detain operators
-					causing mishaps. Every action matters, and a single mistake can trigger a chain reaction
-					of problems. Oakridge aims to balance technical realism with accessibility, delivering
-					an immersive experience that remains understandable for all skill levels.
-				</p>
-			</div>
-		</div>
 	</div>
 	<div class="m-4 p-4 mx-auto border-4 border-base-200 w-full h-fit rounded-md">
 		<h2 class="text-2xl font-bold">Guides</h2>
