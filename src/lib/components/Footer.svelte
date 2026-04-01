@@ -1,8 +1,9 @@
 <script>
 const KDLogo = '/images/icons&logos/Koyot-Digital-Emblem.avif'
-const LicenceImg = '/images/icons&logos/license.svg'
-const GitHub = '/images/icons&logos/github-mark-dark.svg'
+const GitHub = `/images/icons&logos/github.svg`
 const Discord = '/images/icons&logos/Discord.svg'
+const Youtube = '/images/icons&logos/youtube.svg'
+const TikTok = '/images/icons&logos/tiktoc.svg'
 </script>
 
 <footer
@@ -20,7 +21,7 @@ const Discord = '/images/icons&logos/Discord.svg'
 		<p class="font-bold">
 			Koyot Digital
 			<br />
-			"we do things"
+			"we do things, perchance"
 		</p>
 		<p>
 			Copyright © {new Date().getFullYear()} - CC BY-SA 4.0, see LICENSE.md for details.
@@ -34,49 +35,21 @@ const Discord = '/images/icons&logos/Discord.svg'
 					src={GitHub}
 					width="24"
 					height="24"
-					class="fill-violet-500 dark:fill-violet-400"
-					alt=""
+					class="dark:fill-white fill-stone-400"
+					alt="GitHub Link"
 				/>
 			</a>
 			<!-- YouTube -->
 			<a href="https://www.youtube.com/@KoyotDigital" aria-label="YouTube Link">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
-					class="fill-stone-100"
-				>
-					<path
-						d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
-					></path>
-				</svg>
+				<img src={Youtube} alt="YouTube Link" width="24" height="24" />
 			</a>
 			<a
 				href="https://discord.gg/C4JRMA3gB7"
 				aria-label="Discord Server link"
 				class="align-middle pt-1"
 			>
-				<img src={Discord} width="24" height="18.2" class="fill-stone-100" alt="" />
+				<img src={Discord} width="24" height="18.2" class="fill-[#5539CC]" alt="" />
 			</a>
 		</div>
 	</nav>
-	<aside class="flex flex-row flex-wrap gap-2 justify-center">
-		<img
-			alt="Licenced under CC BY-SA 4.0"
-			height="35"
-			width="100"
-			class="inline-block fill-current"
-			style="border-radius: 0.5rem;"
-			src={LicenceImg}
-		/>
-		<img
-			alt="Licenced under CC BY-SA 4.0"
-			height="35"
-			width="100"
-			class="inline-block fill-current"
-			style="border-radius: 0.5rem;"
-			src={LicenceImg}
-		/>
-	</aside>
 </footer>
