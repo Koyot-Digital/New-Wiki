@@ -35,7 +35,7 @@ const TikTok = '/images/icons&logos/tiktoc.svg'
 					src={GitHub}
 					width="24"
 					height="24"
-					class="dark:fill-white fill-stone-400"
+					class="dark:fill-white fill-current"
 					alt="GitHub Link"
 				/>
 			</a>
