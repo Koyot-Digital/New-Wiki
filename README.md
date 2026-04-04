@@ -38,7 +38,7 @@ To exclude a node from Prettier formatting, wrap it like this:
 
 ## ✏️ Contributing
 
-For full contributing guidelines, see [/CONTRIBUTING.md](./CONTRIBUTING.md).
+For full contributing guidelines, see [/CONTRIBUTING.md](/CONTRIBUTING.md).
 
 New to GitHub? Git can feel overwhelming at first, but it clicks quickly. This XKCD comic is a fun starting point:
 
