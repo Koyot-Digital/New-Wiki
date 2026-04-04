@@ -43,6 +43,7 @@ const TikTok = '/images/icons&logos/tiktoc.svg'
 			<a href="https://www.youtube.com/@KoyotDigital" aria-label="YouTube Link">
 				<img src={Youtube} alt="YouTube Link" width="24" height="24" />
 			</a>
+			<!-- Discord -->
 			<a
 				href="https://discord.gg/C4JRMA3gB7"
 				aria-label="Discord Server link"
