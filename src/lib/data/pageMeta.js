@@ -1,4 +1,4 @@
-import pageTitlesAndTaglines from './pageTitlesAndTaglines.yaml' with { type: 'yaml' }
+import pageTitlesAndTaglines from '$lib/data/pageTitles&Taglines.yaml' with { type: 'yaml' }
 
 /** @typedef {{ 404?: string, default?: string }} ErrorTaglines */
 /** @typedef {{ route: string, title: string, tagline?: string | null | ErrorTaglines }} PageMetaRecord */
