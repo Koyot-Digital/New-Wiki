@@ -4,13 +4,21 @@
 	import CHITEM from '$lib/components/ChecklistItem.svelte'
 	import CRIND from '$lib/components/ControlRoomIndicator.svelte'
 	import '../../app.css'
+	import { getPageMeta } from '$lib/data/pageMeta.js'
+
+	const pageMeta = getPageMeta('/dev/')
 </script>
+
+<svelte:head>
+	<title>{pageMeta.title}</title>
+</svelte:head>
+
 <div class="p-16 gap-50">
 	<!-- With Button -->
 	<Header
 		heroImg="/images/capybara.png"
 		title="Example Title"
-		catchphrase="Example Catchphrase"
+		catchphrase={pageMeta.tagline ?? 'Example Catchphrase'}
 		button="https://example.org"
 		buttontext="Example"
 	/>
@@ -18,7 +26,7 @@
 	<Header
 		heroImg="/images/capybara.png"
 		title="Example Title"
-		catchphrase="Example Catchphrase"
+		catchphrase={pageMeta.tagline ?? 'Example Catchphrase'}
 	/>
 </div>
 

@@ -3,12 +3,19 @@ import '../../../app.css'
 import Header from '$lib/components/Header.svelte'
 import Footer from '$lib/components/Footer.svelte'
 const hero = '/images/hero-banners/locations.avif'
+import { getPageMeta } from '$lib/data/pageMeta.js'
+
+const pageMeta = getPageMeta('/guides/locations/')
 </script>
+
+<svelte:head>
+	<title>{pageMeta.title}</title>
+</svelte:head>
 
 <Header
 	heroImg={hero}
 	title="Locations"
-	catchphrase="The facility is vast and can be disorienting for visitors to navigate in. Use this guide to find the locations listed here."
+	catchphrase={pageMeta.tagline ?? 'The facility is vast and can be disorienting for visitors to navigate in. Use this guide to find the locations listed here.'}
 />
 
 <div class="m-5">

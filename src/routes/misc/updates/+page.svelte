@@ -3,12 +3,19 @@ import '../../../app.css'
 import Header from '$lib/components/Header.svelte'
 import Footer from '$lib/components/Footer.svelte'
 const hero = '/images/hero-banners/updates.avif'
+import { getPageMeta } from '$lib/data/pageMeta.js'
+
+const pageMeta = getPageMeta('/misc/updates/')
 </script>
+
+<svelte:head>
+	<title>{pageMeta.title}</title>
+</svelte:head>
 
 <Header
 	heroImg={hero}
 	title="Updates"
-	catchphrase="who needs semantic versioning anyway? (if you couldn't tell, not oakridge)"
+	catchphrase={pageMeta.tagline ?? "who needs semantic versioning anyway? (if you couldn't tell, not oakridge)"}
 />
 
 <div class="m-5">

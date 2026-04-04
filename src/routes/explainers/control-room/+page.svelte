@@ -2,12 +2,19 @@
 import '../../../app.css'
 import Header from '$lib/components/Header.svelte'
 import Footer from '$lib/components/Footer.svelte'
+import { getPageMeta } from '$lib/data/pageMeta.js'
+
+const pageMeta = getPageMeta('/explainers/control-room/')
 </script>
+
+<svelte:head>
+	<title>{pageMeta.title}</title>
+</svelte:head>
 
 <Header
 	heroImg="/images/hero-banners/control-room.avif"
 	title="Control Room"
-	catchphrase=";quot&REACTOR EXPLOTET!;quot& - Visitor, probably"
+	catchphrase={pageMeta.tagline ?? ';quot&REACTOR EXPLOTET!;quot& - Visitor, probably'}
 />
 <!-- pre -->
 

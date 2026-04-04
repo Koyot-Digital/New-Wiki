@@ -4,9 +4,16 @@ import Header from '$lib/components/Header.svelte'
 import Footer from '$lib/components/Footer.svelte'
 const hero = '/images/hero-banners/badges.avif'
 import badgeData from '$lib/data/badgesData.yaml' with { type: 'yaml' }
+import { getPageMeta } from '$lib/data/pageMeta.js'
+
+const pageMeta = getPageMeta('/guides/badges/')
 </script>
 
-<Header heroImg={hero} title="Badges" catchphrase="Gotta get them all!" />
+<svelte:head>
+	<title>{pageMeta.title}</title>
+</svelte:head>
+
+<Header heroImg={hero} title="Badges" catchphrase={pageMeta.tagline ?? 'Gotta get them all!'} />
 
 <div class="mx-auto my-4 max-w-[95vw]">
 	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4">

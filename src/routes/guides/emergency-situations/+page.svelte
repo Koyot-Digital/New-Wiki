@@ -3,12 +3,19 @@ import '../../../app.css'
 import Header from '$lib/components/Header.svelte'
 import Footer from '$lib/components/Footer.svelte'
 import TickBox from '$lib/components/ChecklistItem.svelte'
+import { getPageMeta } from '$lib/data/pageMeta.js'
+
+const pageMeta = getPageMeta('/guides/emergency-situations/')
 </script>
+
+<svelte:head>
+	<title>{pageMeta.title}</title>
+</svelte:head>
 
 <Header
 	heroImg="/images/hero-banners/emergency.avif"
 	title="Emergency Situations & Procedures"
-	catchphrase="'I think that was the wrong button' - NRC Inspector"
+	catchphrase={pageMeta.tagline ?? "'I think that was the wrong button' - NRC Inspector"}
 />
 
 <div class="tabs tabs-lift m-5">

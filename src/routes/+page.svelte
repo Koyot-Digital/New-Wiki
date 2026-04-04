@@ -7,12 +7,19 @@ const headerImg = '/images/hero-banners/banner5.avif'
 const locations = '/images/hero-banners/emergency.avif'
 const updates = '/images/hero-banners/updates.avif'
 const teamImg = '/images/hero-banners/npcs.avif'
+import { getPageMeta } from '$lib/data/pageMeta.js'
+
+const pageMeta = getPageMeta('/')
 </script>
+
+<svelte:head>
+	<title>{pageMeta.title}</title>
+</svelte:head>
 
 <Header
 	heroImg={headerImg}
 	title="Oakridge Nuclear Power Station"
-	catchphrase="Experience the challenges and responsibilities of managing a nuclear power plant in this immersive Roblox game."
+	catchphrase={pageMeta.tagline ?? 'Experience the challenges and responsibilities of managing a nuclear power plant in this immersive Roblox game.'}
 	button="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station"
 />
 <div class="grid grid-cols-2 gap-4 mx-4">

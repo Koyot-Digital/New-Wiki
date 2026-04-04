@@ -34,12 +34,20 @@ function fixDescription(lightData: LightData): string {
 		return 'No Fix Available, contact wiki staff if you want a fix for this annunciator to be added to the wiki at #wiki-suggestions on our discord server, or make an issue on our GitHub repository.'
 	}
 }
+
+import { getPageMeta } from '$lib/data/pageMeta.js'
+
+const pageMeta = getPageMeta('/explainers/info-panels/')
 </script>
+
+<svelte:head>
+	<title>{pageMeta.title}</title>
+</svelte:head>
 
 <Header
 	heroImg="/images/hero-banners/info-panels.avif"
 	title="Information Panels"
-	catchphrase="Fun Fact: Reactor Power High is kinda bad ngl"
+	catchphrase={pageMeta.tagline ?? 'Fun Fact: Reactor Power High is kinda bad ngl'}
 />
 
 <div class="mx-auto my-4 max-w-[95vw]">

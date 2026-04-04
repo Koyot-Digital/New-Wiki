@@ -7,10 +7,6 @@ declare global {
 		// interface PageData {}
 		// interface PageState {}
 		// interface Platform {}
-		declare module '*.yaml' {
-			const value: any
-			export default value
-		}
 	}
 }
 

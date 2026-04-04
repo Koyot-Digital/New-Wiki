@@ -2,12 +2,19 @@
 import '../../../app.css'
 import Footer from '$lib/components/Footer.svelte'
 import Header from '$lib/components/Header.svelte'
+import { getPageMeta } from '$lib/data/pageMeta.js'
+
+const pageMeta = getPageMeta('/misc/npcs/')
 </script>
+
+<svelte:head>
+	<title>{pageMeta.title}</title>
+</svelte:head>
 
 <Header
 	heroImg="/images/hero-banners/banner5.avif"
 	title="Non-Player Characters"
-	catchphrase="Carson, did you steal my lunch?"
+	catchphrase={pageMeta.tagline ?? 'Carson, did you steal my lunch?'}
 />
 <div class="flex flex-nowrap justify-center items-center m-5">
 	<div class="card card-border bg-base-100 w-1/2 shadow-sm rounded-box border-2 m-6 order-1">

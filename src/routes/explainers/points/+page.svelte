@@ -3,13 +3,20 @@ import '../../../app.css'
 import Header from '$lib/components/Header.svelte'
 import Footer from '$lib/components/Footer.svelte'
 const hero = '/images/hero-banners/points.avif'
+import { getPageMeta } from '$lib/data/pageMeta.js'
+
+const pageMeta = getPageMeta('/explainers/points/')
 </script>
+
+<svelte:head>
+	<title>{pageMeta.title}</title>
+</svelte:head>
 
 <!-- prettier-ignore-start -->
 <Header
 	heroImg={hero}
 	title="Ranks and Points"
-	catchphrase='You dont know about the ranks around here? What are they teaching the new trainees? We work for a nuclear powerplant for the NRCs sake!" - Supervisor.'
+	catchphrase={pageMeta.tagline ?? '"You dont know about the ranks around here? What are they teaching the new trainees? We work for a nuclear powerplant for the NRCs sake!" - Supervisor.'}
 />
 <!-- prettier-ignore-end -->
 

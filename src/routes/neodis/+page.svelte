@@ -1,7 +1,14 @@
 <script lang="ts">
 import '../../app.css'
 import neodis from '/images/people-and-npcs/mods/comunity-relations/Neodis.avif'
+import { getPageMeta } from '$lib/data/pageMeta.js'
+
+const pageMeta = getPageMeta('/neodis/')
 </script>
+
+<svelte:head>
+	<title>{pageMeta.title}</title>
+</svelte:head>
 
 <div class="flex items-center justify-center h-screen">
 	<div class="flex items-center justify-center h-screen">

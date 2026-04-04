@@ -62,12 +62,19 @@ function runCalculationPaycheck() {
 }
 
 runCalculationTurbine()
+import { getPageMeta } from '$lib/data/pageMeta.js'
+
+const pageMeta = getPageMeta('/misc/utilities/')
 </script>
+
+<svelte:head>
+	<title>{pageMeta.title}</title>
+</svelte:head>
 
 <Header
 	heroImg={hero}
 	title="Utilities"
-	catchphrase="Ever Needed a little Help Getting that Turbine Bypass?"
+	catchphrase={pageMeta.tagline ?? 'Ever Needed a little Help Getting that Turbine Bypass?'}
 />
 
 <div class="m-5">
