@@ -22,7 +22,9 @@ formatting.
 To exclude a node from Prettier formatting, wrap it like this:
 
 ```html
-<!-- prettier-ignore-start -->[NODE HERE]<!-- prettier-ignore-end -->
+<!-- prettier-ignore-start -->
+[NODE HERE]
+<!-- prettier-ignore-end -->
 ```
 
 ### Resources
@@ -64,13 +66,13 @@ you — clear, direct, and human.
 
 For example:
 
-***DON'T:***
+**_DON'T:_**
 
 ```
 The missile knows where it is at all times. It knows this because it knows where it isn't. By subtracting where it is from where it isn't, or where it isn't from where it is (whichever is greater), it obtains a difference, or deviation...
 ```
 
-***DO:***
+**_DO:_**
 
 ```
 The missile knows where it is at all times. It knows this because it knows where it isn't.

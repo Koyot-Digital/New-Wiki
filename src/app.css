@@ -48,35 +48,35 @@ abbr {
 	--font-helvetica_like: 'Helvetica';
 }
 * {
-	font-family: "Helvetica", system-ui;
+	font-family: 'Helvetica', system-ui;
 }
 @font-face {
-	src: url("/fonts/Helvetica.woff2") format("woff2");
+	src: url('/fonts/Helvetica.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
-	font-family: "Helvetica";
+	font-family: 'Helvetica';
 }
 @font-face {
-	src: url("/fonts/Helvetica-Bold.woff2") format("woff2");
+	src: url('/fonts/Helvetica-Bold.woff2') format('woff2');
 	font-weight: bold;
 	font-style: normal;
-	font-family: "Helvetica";
+	font-family: 'Helvetica';
 }
 @font-face {
-	src: url("/fonts/Helvetica-Oblique.woff2") format("woff2");
+	src: url('/fonts/Helvetica-Oblique.woff2') format('woff2');
 	font-weight: normal;
 	font-style: oblique;
-	font-family: "Helvetica";
+	font-family: 'Helvetica';
 }
 @font-face {
-	src: url("/fonts/Helvetica-BoldOblique.woff2") format("woff2");
+	src: url('/fonts/Helvetica-BoldOblique.woff2') format('woff2');
 	font-weight: bold;
 	font-style: oblique;
-	font-family: "Helvetica";
+	font-family: 'Helvetica';
 }
 @font-face {
-	src: url("/fonts/IBMPlexSansJP-Medium.woff2") format("woff2");
+	src: url('/fonts/IBMPlexSansJP-Medium.woff2') format('woff2');
 	font-weight: 600;
 	font-style: normal;
-	font-family: "IBMPlexSans";
+	font-family: 'IBMPlexSans';
 }

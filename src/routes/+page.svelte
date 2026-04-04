@@ -19,7 +19,8 @@ const pageMeta = getPageMeta('/')
 <Header
 	heroImg={headerImg}
 	title="Oakridge Nuclear Power Station"
-	catchphrase={pageMeta.tagline ?? 'Experience the challenges and responsibilities of managing a nuclear power plant in this immersive Roblox game.'}
+	catchphrase={pageMeta.tagline ??
+		'Experience the challenges and responsibilities of managing a nuclear power plant in this immersive Roblox game.'}
 	button="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station"
 />
 <div class="grid grid-cols-2 gap-4 mx-4">

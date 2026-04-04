@@ -13,7 +13,11 @@ const pageMeta = getPageMeta('/misc/credits/')
 	<title>{pageMeta.title}</title>
 </svelte:head>
 
-<Header heroImg={hero} title="Credits" catchphrase={pageMeta.tagline ?? 'Who designed this reactor again?'} />
+<Header
+	heroImg={hero}
+	title="Credits"
+	catchphrase={pageMeta.tagline ?? 'Who designed this reactor again?'}
+/>
 <div class="tab-content bg-base-100 flex flex-wrap justify-center p-7">
 	<svg
 		xmlns="http://www.w3.org/2000/svg"

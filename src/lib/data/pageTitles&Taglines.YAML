@@ -56,7 +56,7 @@ pages:
     tagline: Ever Needed a little Help Getting that Turbine Bypass?
 
   - page: /error
-    title: "ONPS Wiki - {status} - {message}"
+    title: 'ONPS Wiki - {status} - {message}'
     tagline:
       404: ok where did the polonium- I mean page go? we had it right here a second ago... maybe check the waste storage? or the cooling towers? maybe it's in the turbine hall? who knows, but it's definitely not here.
       default: An unexpected error has occurred. Press the button below to go to the homepage

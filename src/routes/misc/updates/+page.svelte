@@ -15,7 +15,8 @@ const pageMeta = getPageMeta('/misc/updates/')
 <Header
 	heroImg={hero}
 	title="Updates"
-	catchphrase={pageMeta.tagline ?? "who needs semantic versioning anyway? (if you couldn't tell, not oakridge)"}
+	catchphrase={pageMeta.tagline ??
+		"who needs semantic versioning anyway? (if you couldn't tell, not oakridge)"}
 />
 
 <div class="m-5">

@@ -15,7 +15,8 @@ const pageMeta = getPageMeta('/guides/locations/')
 <Header
 	heroImg={hero}
 	title="Locations"
-	catchphrase={pageMeta.tagline ?? 'The facility is vast and can be disorienting for visitors to navigate in. Use this guide to find the locations listed here.'}
+	catchphrase={pageMeta.tagline ??
+		'The facility is vast and can be disorienting for visitors to navigate in. Use this guide to find the locations listed here.'}
 />
 
 <div class="m-5">
