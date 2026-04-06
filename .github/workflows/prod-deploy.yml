@@ -1,0 +1,29 @@
+name: Deploy
+permissions:
+    contents: read
+
+on:
+    push:
+        branches:
+            - prod
+    workflow_dispatch:
+
+jobs:
+    build-and-push:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Log in to Container Registry
+              uses: docker/login-action@v3
+              with:
+                  registry: docker.io
+                  username: vfxd9
+                  password: ${{ secrets.DOCKER_TOKEN }}
+
+            - name: Build Docker images
+              run: docker build -f dockerfile -t vfxd9/oakrige-wiki:frontend-prod .
+
+            - name: Push Docker images
+              run: docker push vfxd9/oakrige-wiki:frontend-prod
