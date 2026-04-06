@@ -23,7 +23,7 @@ jobs:
                   password: ${{ secrets.DOCKER_TOKEN }}
 
             - name: Build Docker images
-              run: docker build -f dockerfile -t vfxd9/oakrige-wiki:frontend .
+              run: docker build -f dockerfile -t vfxd9/oakrige-wiki:frontend-dev .
 
             - name: Push Docker images
-              run: docker push vfxd9/oakrige-wiki:frontend
+              run: docker push vfxd9/oakrige-wiki:frontend-dev
