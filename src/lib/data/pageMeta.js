@@ -12,10 +12,10 @@ const pages = Array.isArray(data.pages) ? data.pages : []
  * @param {string} route
  */
 function normalizeRoute(route) {
+	if (!route || typeof route !== 'string') return '/' // ← add this
 	if (route === '/') {
 		return route
 	}
-
 	const trimmed = route.endsWith('/') ? route.slice(0, -1) : route
 	return trimmed || '/'
 }
