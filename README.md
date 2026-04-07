@@ -8,9 +8,9 @@
 ![GitHub stars](https://img.shields.io/github/stars/Koyot-Digital/Wiki?style=for-the-badge)
 
 - **Dev site:** https://wiki.scatterbox.dev/
-  [![deploy](https://github.com/Koyot-Digital/Wiki/actions/workflows/Dev-Deploy.yml/badge.svg)](https://github.com/Koyot-Digital/Wiki/actions/workflows/Dev-Deploy.yml)
+  [![deploy](https://github.com/Koyot-Digital/Wiki/actions/workflows/dev-deploy.yml/badge.svg)](https://github.com/Koyot-Digital/Wiki/actions/workflows/Dev-Deploy.yml)
 - **Prod site:** https://wiki.koyot.digital/
-  [![deploy](https://github.com/Koyot-Digital/Wiki/actions/workflows/Prod-Deploy.yml/badge.svg)](https://github.com/Koyot-Digital/Wiki/actions/workflows/Prod-Deploy.yml)
+  [![deploy](https://github.com/Koyot-Digital/Wiki/actions/workflows/prod-deploy.yml/badge.svg)](https://github.com/Koyot-Digital/Wiki/actions/workflows/Prod-Deploy.yml)
 
 ---
 
