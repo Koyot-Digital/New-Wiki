@@ -33,7 +33,7 @@ const pageMeta = getPageMeta('/guides/emergency-situations/')
 		<i>If Alert RPV Pressure High High</i>
 		<TickBox
 			item="A3-5"
-			action="Start"
+			action="Press"
 			info="if you are a visitor or trainee, enable the Mode 0 button."
 			indent={true}
 		/>
@@ -52,7 +52,7 @@ const pageMeta = getPageMeta('/guides/emergency-situations/')
 		<i>If Alert RPV Temperature High High</i>
 		<TickBox
 			item="A3-5"
-			action="Start"
+			action="Press"
 			info="if you are a visitor or trainee, enable the Mode 0 button."
 			indent={true}
 		/>
@@ -96,7 +96,7 @@ const pageMeta = getPageMeta('/guides/emergency-situations/')
 		<br />
 		<TickBox
 			item="A3-5"
-			action="Enable"
+			action="Press"
 			info="If you are a visitor or trainee, enable reactor Mode 0."
 			indent={true}
 		/>
@@ -131,7 +131,7 @@ const pageMeta = getPageMeta('/guides/emergency-situations/')
 		</i>
 		<br />
 		<br />
-		<TickBox item="A3-5" action="Enable" indent={true} />
+		<TickBox item="A3-5" action="Press" indent={true} />
 		<TickBox item="Breaker 64A-M" action="Disable" indent={true} />
 		<TickBox item="Breaker 64-G2" action="Disable" indent={true} />
 		<TickBox item="Emergency Diesel Generators 1 & 2" action="Start" indent={true} />
