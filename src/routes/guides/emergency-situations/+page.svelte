@@ -81,7 +81,7 @@ const pageMeta = getPageMeta('/guides/emergency-situations/')
 		<br />
 		<i>If Alert Core Water Low Low</i>
 		<br />
-		<TickBox item="AZ-5" action="Start" indent />
+		<TickBox item="A3-5" action="Press" indent />
 		<TickBox item="ECCS" action="Start Injection" indent />
 		<TickBox item="Feedwater Pumps" action="Increase as required" indent />
 		<TickBox item="Water Level" action="Monitor" indent />
