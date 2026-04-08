@@ -1,23 +1,21 @@
 <script lang="ts">
-import '../../../app.css'
-import Header from '$lib/components/Header.svelte'
-import Footer from '$lib/components/Footer.svelte'
 const hero = '/images/hero-banners/updates.avif'
 import { getPageMeta } from '$lib/data/pageMeta.js'
+import { headerConfig } from '../../../lib/stores/headerStore.ts'
 
 const pageMeta = getPageMeta('/misc/updates/')
+
+headerConfig.set({
+	heroImg: hero,
+	title: 'Updates',
+	catchphrase: pageMeta.tagline ?? "who needs semantic versioning anyway? (if you couldn't tell, not oakridge)"
+})
 </script>
 
 <svelte:head>
 	<title>{pageMeta.title}</title>
 </svelte:head>
 
-<Header
-	heroImg={hero}
-	title="Updates"
-	catchphrase={pageMeta.tagline ??
-		"who needs semantic versioning anyway? (if you couldn't tell, not oakridge)"}
-/>
 
 <div class="m-5">
 	<div class="collapse bg-base-100 mb-6">
@@ -245,4 +243,3 @@ const pageMeta = getPageMeta('/misc/updates/')
 	</div>
 </div>
 
-<Footer />

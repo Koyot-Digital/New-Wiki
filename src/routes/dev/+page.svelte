@@ -1,12 +1,17 @@
 <script>
-	import Header from '$lib/components/Header.svelte'
-	import Footer from '$lib/components/Footer.svelte'
 	import CHITEM from '$lib/components/ChecklistItem.svelte'
 	import CRIND from '$lib/components/ControlRoomIndicator.svelte'
-	import '../../app.css'
 	import { getPageMeta } from '$lib/data/pageMeta.js'
+	import { headerConfig } from './../../lib/stores/headerStore.ts'
 
 	const pageMeta = getPageMeta('/dev/')
+
+	// Set header for the page
+	headerConfig.set({
+		heroImg: '/images/capybara.png',
+		title: 'Dev Page',
+		catchphrase: pageMeta.tagline ?? 'Example Catchphrase'
+	})
 </script>
 
 <svelte:head>
@@ -14,24 +19,11 @@
 </svelte:head>
 
 <div class="p-16 gap-50">
-	<!-- With Button -->
-	<Header
-		heroImg="/images/capybara.png"
-		title="Example Title"
-		catchphrase={pageMeta.tagline ?? 'Example Catchphrase'}
-		button="https://example.org"
-		buttontext="Example"
-	/>
-	<!-- Without Button-->
-	<Header
-		heroImg="/images/capybara.png"
-		title="Example Title"
-		catchphrase={pageMeta.tagline ?? 'Example Catchphrase'}
-	/>
+	<!-- Dev page content - Header components removed from here -->
 </div>
 
 <div class="p-xl gap-50">
-	<Footer />
+	<!-- Footer removed - now in layout -->
 </div>
 
 <div class="p-xl gap-50">

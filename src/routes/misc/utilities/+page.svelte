@@ -1,8 +1,7 @@
 <script lang="ts">
-import '../../../app.css'
-import Header from '$lib/components/Header.svelte'
-import Footer from '$lib/components/Footer.svelte'
 const hero = '/images/hero-banners/utilities.avif'
+import { getPageMeta } from '$lib/data/pageMeta.js'
+import { headerConfig } from '../../../lib/stores/headerStore.ts'
 
 let demandValue = 1000
 let reactorPower = 4000
@@ -17,6 +16,14 @@ let turbineCalcResult = ''
 let turbineCalcResultPlus = ''
 let efficiencyResult = ''
 let paycheckResult = ''
+
+const pageMeta = getPageMeta('/misc/utilities/')
+
+headerConfig.set({
+	heroImg: hero,
+	title: 'Utilities',
+	catchphrase: pageMeta.tagline ?? 'Helpful tools for the wiki'
+})
 
 function runCalculationTurbine() {
 	const result = demandValue / 2
@@ -62,20 +69,12 @@ function runCalculationPaycheck() {
 }
 
 runCalculationTurbine()
-import { getPageMeta } from '$lib/data/pageMeta.js'
-
-const pageMeta = getPageMeta('/misc/utilities/')
 </script>
 
 <svelte:head>
 	<title>{pageMeta.title}</title>
 </svelte:head>
 
-<Header
-	heroImg={hero}
-	title="Utilities"
-	catchphrase={pageMeta.tagline ?? 'Ever Needed a little Help Getting that Turbine Bypass?'}
-/>
 
 <div class="m-5">
 	<!-- Turbine Calculator -->
@@ -286,4 +285,3 @@ const pageMeta = getPageMeta('/misc/utilities/')
 	</div>
 </div>
 
-<Footer />

@@ -1,23 +1,21 @@
 <script>
-import '../../../app.css'
-import Header from '$lib/components/Header.svelte'
-import Footer from '$lib/components/Footer.svelte'
 const hero = '/images/hero-banners/credits.avif'
 import itemData from '$lib/data/creditsData.yaml'
 import { getPageMeta } from '$lib/data/pageMeta.js'
+import { headerConfig } from '$lib/stores/headerStore.ts'
 
 const pageMeta = getPageMeta('/misc/credits/')
+
+headerConfig.set({
+	heroImg: hero,
+	title: 'Credits',
+	catchphrase: pageMeta.tagline ?? 'Thanks to everyone who contributed!'
+})
 </script>
 
 <svelte:head>
 	<title>{pageMeta.title}</title>
 </svelte:head>
-
-<Header
-	heroImg={hero}
-	title="Credits"
-	catchphrase={pageMeta.tagline ?? 'Who designed this reactor again?'}
-/>
 <div class="tab-content bg-base-100 flex flex-wrap justify-center p-7">
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
@@ -114,4 +112,3 @@ const pageMeta = getPageMeta('/misc/credits/')
 		{/each}
 	</div>
 </div>
-<Footer />

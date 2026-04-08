@@ -1,9 +1,15 @@
 <script lang="ts">
-import '../../app.css'
 import neodis from '/images/people-and-npcs/mods/comunity-relations/Neodis.avif'
 import { getPageMeta } from '$lib/data/pageMeta.js'
+import { headerConfig } from '../../lib/stores/headerStore.ts'
 
 const pageMeta = getPageMeta('/neodis/')
+
+headerConfig.set({
+	heroImg: '/images/hero-banners/banner5.avif',
+	title: 'Neodis',
+	catchphrase: pageMeta.tagline ?? 'Breaking lights since 2024'
+})
 </script>
 
 <svelte:head>

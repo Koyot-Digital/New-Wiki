@@ -1,7 +1,4 @@
 <script lang="ts">
-import '../../../app.css'
-import Header from '$lib/components/Header.svelte'
-import Footer from '$lib/components/Footer.svelte'
 import Indicator from '$lib/components/ControlRoomIndicator.svelte'
 import annunciatorData from '$lib/data/annunciatorData.json' with { type: 'json' }
 interface LightData {
@@ -36,19 +33,21 @@ function fixDescription(lightData: LightData): string {
 }
 
 import { getPageMeta } from '$lib/data/pageMeta.js'
+import { headerConfig } from './../../../lib/stores/headerStore.ts'
 
 const pageMeta = getPageMeta('/explainers/info-panels/')
+
+headerConfig.set({
+	heroImg: '/images/hero-banners/info-panels.avif',
+	title: 'Information Panels',
+	catchphrase: pageMeta.tagline ?? 'Fun Fact: Reactor Power High is kinda bad ngl'
+})
 </script>
 
 <svelte:head>
 	<title>{pageMeta.title}</title>
 </svelte:head>
 
-<Header
-	heroImg="/images/hero-banners/info-panels.avif"
-	title="Information Panels"
-	catchphrase={pageMeta.tagline ?? 'Fun Fact: Reactor Power High is kinda bad ngl'}
-/>
 
 <div class="mx-auto my-4 max-w-[95vw]">
 	<div class="flex flex-wrap gap-4">
@@ -71,4 +70,3 @@ const pageMeta = getPageMeta('/explainers/info-panels/')
 	</div>
 </div>
 
-<Footer />

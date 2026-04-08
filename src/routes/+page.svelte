@@ -1,28 +1,26 @@
 <script lang="ts">
-import '../app.css'
-import Header from '$lib/components/Header.svelte'
-import Footer from '$lib/components/Footer.svelte'
 import PageData from '$lib/data/pageData.json' with { type: 'json' }
 const headerImg = '/images/hero-banners/banner5.avif'
 const locations = '/images/hero-banners/emergency.avif'
 const updates = '/images/hero-banners/updates.avif'
 const teamImg = '/images/hero-banners/npcs.avif'
 import { getPageMeta } from '$lib/data/pageMeta.js'
+import { headerConfig } from '../lib/stores/headerStore.ts'
 
 const pageMeta = getPageMeta('/')
+
+headerConfig.set({
+	heroImg: headerImg,
+	title: 'Oakridge Nuclear Power Station',
+	catchphrase: pageMeta.tagline ?? 'Experience the challenges and responsibilities of managing a nuclear power plant in this immersive Roblox game.',
+	button: 'https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station'
+})
 </script>
 
 <svelte:head>
 	<title>{pageMeta.title}</title>
 </svelte:head>
 
-<Header
-	heroImg={headerImg}
-	title="Oakridge Nuclear Power Station"
-	catchphrase={pageMeta.tagline ??
-		'Experience the challenges and responsibilities of managing a nuclear power plant in this immersive Roblox game.'}
-	button="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station"
-/>
 <div class="grid grid-cols-2 gap-4 mx-4">
 	<div class="m-4 grid grid-cols-1 grid-rows-1 gap-4 mx-auto">
 		<div class="card card-border bg-base-100 h-fit">
@@ -89,7 +87,6 @@ const pageMeta = getPageMeta('/')
 		</div>
 	</div>
 </div>
-<Footer />
 
 <style>
 .card-img {

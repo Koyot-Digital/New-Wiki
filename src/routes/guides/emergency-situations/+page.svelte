@@ -1,22 +1,21 @@
 <script>
-import '../../../app.css'
-import Header from '$lib/components/Header.svelte'
-import Footer from '$lib/components/Footer.svelte'
 import TickBox from '$lib/components/ChecklistItem.svelte'
 import { getPageMeta } from '$lib/data/pageMeta.js'
+import { headerConfig } from './../../../lib/stores/headerStore.ts'
 
 const pageMeta = getPageMeta('/guides/emergency-situations/')
+
+headerConfig.set({
+	heroImg: '/images/hero-banners/emergency.avif',
+	title: 'Emergency Situations & Procedures',
+	catchphrase: pageMeta.tagline ?? "'I think that was the wrong button' - NRC Inspector"
+})
 </script>
 
 <svelte:head>
 	<title>{pageMeta.title}</title>
 </svelte:head>
 
-<Header
-	heroImg="/images/hero-banners/emergency.avif"
-	title="Emergency Situations & Procedures"
-	catchphrase={pageMeta.tagline ?? "'I think that was the wrong button' - NRC Inspector"}
-/>
 
 <div class="tabs tabs-lift m-5">
 	<input type="radio" name="my_tabs_5" class="tab" aria-label="Abnormal RPV Pressure" checked />
@@ -152,5 +151,3 @@ const pageMeta = getPageMeta('/guides/emergency-situations/')
 		<TickBox item="Temperature, Pressure, Water Level" action="Monitor" indent={true} />
 	</div>
 </div>
-<Footer />
->>>>>>> 0b9d87df4a43078a9fe329a21151f54d2c784d75

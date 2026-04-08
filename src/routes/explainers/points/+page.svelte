@@ -1,11 +1,15 @@
 <script lang="ts">
-import '../../../app.css'
-import Header from '$lib/components/Header.svelte'
-import Footer from '$lib/components/Footer.svelte'
 const hero = '/images/hero-banners/points.avif'
 import { getPageMeta } from '$lib/data/pageMeta.js'
+import { headerConfig } from './../../../lib/stores/headerStore.ts'
 
 const pageMeta = getPageMeta('/explainers/points/')
+
+headerConfig.set({
+	heroImg: hero,
+	title: 'Ranks and Points',
+	catchphrase: pageMeta.tagline ?? '"You dont know about the ranks around here? What are they teaching the new trainees? We work for a nuclear powerplant for the NRCs sake!" - Supervisor.'
+})
 </script>
 
 <svelte:head>
@@ -13,11 +17,6 @@ const pageMeta = getPageMeta('/explainers/points/')
 </svelte:head>
 
 <!-- prettier-ignore-start -->
-<Header
-	heroImg={hero}
-	title="Ranks and Points"
-	catchphrase={pageMeta.tagline ?? '"You dont know about the ranks around here? What are they teaching the new trainees? We work for a nuclear powerplant for the NRCs sake!" - Supervisor.'}
-/>
 <!-- prettier-ignore-end -->
 
 <div class="m-5">
@@ -276,4 +275,3 @@ const pageMeta = getPageMeta('/explainers/points/')
 	</div>
 </div>
 
-<Footer />
