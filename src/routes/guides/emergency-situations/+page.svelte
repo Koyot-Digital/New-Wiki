@@ -33,7 +33,6 @@ headerConfig.set({
 		<TickBox
 			item="A3-5"
 			action="Press"
-			info="if you are a visitor or trainee, enable the Mode 0 button."
 			indent={true}
 		/>
 		<TickBox item="All Relief Valves" action="Enable" indent />
@@ -52,7 +51,6 @@ headerConfig.set({
 		<TickBox
 			item="A3-5"
 			action="Press"
-			info="if you are a visitor or trainee, enable the Mode 0 button."
 			indent={true}
 		/>
 		<TickBox item="Main Circulation Pumps A1 & A2" action="Enable" indent />
