@@ -125,8 +125,7 @@ are formatted, visit [@gargleblaster-rbmk's HTML guide](https://gargleblaster-rb
 the [Mozilla MDN Docs](https://developer.mozilla.org/).
 
 **Image Formats:**
-Only `.AVIF` files are supported. This keeps file sizes small and pages loading fast. Large images slow down the site
-and hurt SEO.
+Only `.AVIF` & `.SVG` files are supported. This keeps file sizes small and pages loading fast. Large images slow down the site and hurt SEO.
 
 ---
 
