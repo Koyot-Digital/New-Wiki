@@ -1,62 +1,62 @@
 pages:
-  - page: /
-    title: ONPS Wiki - Home
-    tagline: Experience the challenges and responsibilities of managing a nuclear power plant in this immersive Roblox game.
+    - page: /
+      title: ONPS Wiki - Home
+      tagline: Experience the challenges and responsibilities of managing a nuclear power plant in this immersive Roblox game.
 
-  - page: /dev/
-    title: ONPS Wiki - Dev
-    tagline: Example Catchphrase
+    - page: /dev/
+      title: ONPS Wiki - Dev
+      tagline: Example Catchphrase
 
-  - page: /neodis/
-    title: ONPS Wiki - Neodis
-    tagline: null
+    - page: /neodis/
+      title: ONPS Wiki - Neodis
+      tagline: null
 
-  - page: /guides/badges/
-    title: ONPS Wiki - Badges
-    tagline: Gotta get them all!
+    - page: /guides/badges/
+      title: ONPS Wiki - Badges
+      tagline: Gotta get them all!
 
-  - page: /guides/reactor-operations/
-    title: ONPS Wiki - Reactor Operations
-    tagline: Experience the challenges and responsibilities of managing a nuclear power plant in this immersive Roblox game.
+    - page: /guides/reactor-operations/
+      title: ONPS Wiki - Reactor Operations
+      tagline: Experience the challenges and responsibilities of managing a nuclear power plant in this immersive Roblox game.
 
-  - page: /guides/emergency-situations/
-    title: ONPS Wiki - Emergency Situations
-    tagline: "'I think that was the wrong button' - NRC Inspector"
+    - page: /guides/emergency-situations/
+      title: ONPS Wiki - Emergency Situations
+      tagline: "'I think that was the wrong button' - NRC Inspector"
 
-  - page: /guides/locations/
-    title: ONPS Wiki - Locations
-    tagline: The facility is vast and can be disorienting for visitors to navigate in. Use this guide to find the locations listed here.
+    - page: /guides/locations/
+      title: ONPS Wiki - Locations
+      tagline: The facility is vast and can be disorienting for visitors to navigate in. Use this guide to find the locations listed here.
 
-  - page: /explainers/control-room/
-    title: ONPS Wiki - Control Room
-    tagline: ';quot&REACTOR EXPLOTET!;quot& - Visitor, probably'
+    - page: /explainers/control-room/
+      title: ONPS Wiki - Control Room
+      tagline: ';quot&REACTOR EXPLOTET!;quot& - Visitor, probably'
 
-  - page: /explainers/points/
-    title: ONPS Wiki - Points
-    tagline: '"You dont know about the ranks around here? What are they teaching the new trainees? We work for a nuclear powerplant for the NRCs sake!" - Supervisor.'
+    - page: /explainers/points/
+      title: ONPS Wiki - Points
+      tagline: '"You dont know about the ranks around here? What are they teaching the new trainees? We work for a nuclear powerplant for the NRCs sake!" - Supervisor.'
 
-  - page: /explainers/info-panels/
-    title: ONPS Wiki - Info Panels
-    tagline: 'Fun Fact: Reactor Power High is kinda bad ngl'
+    - page: /explainers/info-panels/
+      title: ONPS Wiki - Info Panels
+      tagline: 'Fun Fact: Reactor Power High is kinda bad ngl'
 
-  - page: /misc/credits/
-    title: ONPS Wiki - Credits
-    tagline: Who designed this reactor again?
+    - page: /misc/credits/
+      title: ONPS Wiki - Credits
+      tagline: Who designed this reactor again?
 
-  - page: /misc/npcs/
-    title: ONPS Wiki - NPCs
-    tagline: Carson, did you steal my lunch?
+    - page: /misc/npcs/
+      title: ONPS Wiki - NPCs
+      tagline: Carson, did you steal my lunch?
 
-  - page: /misc/updates/
-    title: ONPS Wiki - Updates
-    tagline: who needs semantic versioning anyway? (if you couldn't tell, not oakridge)
+    - page: /misc/updates/
+      title: ONPS Wiki - Updates
+      tagline: who needs semantic versioning anyway? (if you couldn't tell, not oakridge)
 
-  - page: /misc/utilities/
-    title: ONPS Wiki - Utilities
-    tagline: Ever Needed a little Help Getting that Turbine Bypass?
+    - page: /misc/utilities/
+      title: ONPS Wiki - Utilities
+      tagline: Ever Needed a little Help Getting that Turbine Bypass?
 
-  - page: /error
-    title: 'ONPS Wiki - {status} - {message}'
-    tagline:
-      404: ok where did the polonium- I mean page go? we had it right here a second ago... maybe check the waste storage? or the cooling towers? maybe it's in the turbine hall? who knows, but it's definitely not here.
-      default: An unexpected error has occurred. Press the button below to go to the homepage
+    - page: /error
+      title: 'ONPS Wiki - {status} - {message}'
+      tagline:
+          404: ok where did the polonium- I mean page go? we had it right here a second ago... maybe check the waste storage? or the cooling towers? maybe it's in the turbine hall? who knows, but it's definitely not here.
+          default: An unexpected error has occurred. Press the button below to go to the homepage

@@ -5,8 +5,8 @@ export let catchphrase: string
 export let button: string = ''
 export let buttontext: string = 'Play'
 import pageData from '$lib/data/pageData.json' with { type: 'json' }
-import homeImage from '/images/hero-banners/Reactor-Panel.avif'
-import KDLogo from '/images/icons&logos/Koyot-Digital-Emblem.avif'
+const homeImage = '/images/hero-banners/Reactor-Panel.avif'
+const KDLogo = '/images/icons&logos/Koyot-Digital-Emblem.avif'
 </script>
 
 <!-- #region NavBar content -->
@@ -99,7 +99,7 @@ import KDLogo from '/images/icons&logos/Koyot-Digital-Emblem.avif'
 			<h1 class="mb-5 text-5xl font-bold">{title}</h1>
 			<p class="mb-5">{catchphrase}</p>
 			{#if button !== ''}
-				<button class="btn btn-primary" on:click={() => window.open(button)}>
+				<button class="btn btn-primary" onclick={() => window.open(button)}>
 					{buttontext}
 				</button>
 			{/if}

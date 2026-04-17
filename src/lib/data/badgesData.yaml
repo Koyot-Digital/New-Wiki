@@ -50,7 +50,7 @@
   guideType: bullet
   guide:
       - Successfully sync a turbine and start producing positive power.
-- name: BOOP!
+- name: 'BOOP!'
   description: ':3c'
   image: /images/badges/BOOP.avif
   guideType: num

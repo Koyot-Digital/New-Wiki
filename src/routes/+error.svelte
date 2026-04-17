@@ -1,5 +1,5 @@
 <script>
-import headerImg from '/images/hero-banners/banner5.avif'
+const headerImg = '/images/hero-banners/banner5.avif'
 import { page } from '$app/state'
 import { getErrorMeta } from '$lib/data/pageMeta.js'
 import { headerConfig } from '../lib/stores/headerStore.ts'
@@ -10,11 +10,10 @@ $: headerConfig.set({
 	title: `${page.status} - ${page.error?.message || 'Page not found'}`,
 	catchphrase: errorMeta.tagline,
 	button: '/',
-	buttontext: 'Home'
+	buttontext: 'Home',
 })
 </script>
 
 <svelte:head>
 	<title>{errorMeta.title}</title>
 </svelte:head>
-
