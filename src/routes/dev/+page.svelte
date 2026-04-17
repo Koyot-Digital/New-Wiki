@@ -1,17 +1,17 @@
 <script>
-	import CHITEM from '$lib/components/ChecklistItem.svelte'
-	import CRIND from '$lib/components/ControlRoomIndicator.svelte'
-	import { getPageMeta } from '$lib/data/pageMeta.js'
-	import { headerConfig } from './../../lib/stores/headerStore.ts'
+import CHITEM from '$lib/components/ChecklistItem.svelte'
+import CRIND from '$lib/components/ControlRoomIndicator.svelte'
+import { getPageMeta } from '$lib/data/pageMeta.js'
+import { headerConfig } from './../../lib/stores/headerStore.ts'
 
-	const pageMeta = getPageMeta('/dev/')
+const pageMeta = getPageMeta('/dev/')
 
-	// Set header for the page
-	headerConfig.set({
-		heroImg: '/images/capybara.png',
-		title: 'Dev Page',
-		catchphrase: pageMeta.tagline ?? 'Example Catchphrase'
-	})
+// Set header for the page
+headerConfig.set({
+	heroImg: '/images/capybara.png',
+	title: 'Dev Page',
+	catchphrase: pageMeta.tagline ?? 'Example Catchphrase',
+})
 </script>
 
 <svelte:head>

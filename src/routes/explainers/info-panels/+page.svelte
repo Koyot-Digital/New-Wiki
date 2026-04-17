@@ -40,14 +40,13 @@ const pageMeta = getPageMeta('/explainers/info-panels/')
 headerConfig.set({
 	heroImg: '/images/hero-banners/info-panels.avif',
 	title: 'Information Panels',
-	catchphrase: pageMeta.tagline ?? 'Fun Fact: Reactor Power High is kinda bad ngl'
+	catchphrase: pageMeta.tagline ?? 'Fun Fact: Reactor Power High is kinda bad ngl',
 })
 </script>
 
 <svelte:head>
 	<title>{pageMeta.title}</title>
 </svelte:head>
-
 
 <div class="mx-auto my-4 max-w-[95vw]">
 	<div class="flex flex-wrap gap-4">
@@ -69,4 +68,3 @@ headerConfig.set({
 		{/each}
 	</div>
 </div>
-

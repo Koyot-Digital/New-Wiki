@@ -9,7 +9,7 @@ const pageMeta = getPageMeta('/misc/credits/')
 headerConfig.set({
 	heroImg: hero,
 	title: 'Credits',
-	catchphrase: pageMeta.tagline ?? 'Thanks to everyone who contributed!'
+	catchphrase: pageMeta.tagline ?? 'Thanks to everyone who contributed!',
 })
 </script>
 

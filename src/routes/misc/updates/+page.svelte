@@ -8,14 +8,15 @@ const pageMeta = getPageMeta('/misc/updates/')
 headerConfig.set({
 	heroImg: hero,
 	title: 'Updates',
-	catchphrase: pageMeta.tagline ?? "who needs semantic versioning anyway? (if you couldn't tell, not oakridge)"
+	catchphrase:
+		pageMeta.tagline ??
+		"who needs semantic versioning anyway? (if you couldn't tell, not oakridge)",
 })
 </script>
 
 <svelte:head>
 	<title>{pageMeta.title}</title>
 </svelte:head>
-
 
 <div class="m-5">
 	<div class="collapse bg-base-100 mb-6">
@@ -242,4 +243,3 @@ headerConfig.set({
 		</div>
 	</div>
 </div>
-

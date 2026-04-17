@@ -7,7 +7,7 @@ const pageMeta = getPageMeta('/misc/npcs/')
 headerConfig.set({
 	heroImg: '/images/hero-banners/banner5.avif',
 	title: 'Non-Player Characters',
-	catchphrase: pageMeta.tagline ?? 'Carson, did you steal my lunch?'
+	catchphrase: pageMeta.tagline ?? 'Carson, did you steal my lunch?',
 })
 </script>
 

@@ -8,7 +8,7 @@ const pageMeta = getPageMeta('/neodis/')
 headerConfig.set({
 	heroImg: '/images/hero-banners/banner5.avif',
 	title: 'Neodis',
-	catchphrase: pageMeta.tagline ?? 'Breaking lights since 2024'
+	catchphrase: pageMeta.tagline ?? 'Breaking lights since 2024',
 })
 </script>
 

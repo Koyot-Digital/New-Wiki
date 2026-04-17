@@ -8,14 +8,13 @@ const pageMeta = getPageMeta('/guides/emergency-situations/')
 headerConfig.set({
 	heroImg: '/images/hero-banners/emergency.avif',
 	title: 'Emergency Situations & Procedures',
-	catchphrase: pageMeta.tagline ?? "'I think that was the wrong button' - NRC Inspector"
+	catchphrase: pageMeta.tagline ?? "'I think that was the wrong button' - NRC Inspector",
 })
 </script>
 
 <svelte:head>
 	<title>{pageMeta.title}</title>
 </svelte:head>
-
 
 <div class="tabs tabs-lift m-5">
 	<input type="radio" name="my_tabs_5" class="tab" aria-label="Abnormal RPV Pressure" checked />
@@ -30,11 +29,7 @@ headerConfig.set({
 		<TickBox item="RPV Pressure" action="Monitor" indent />
 		<br />
 		<i>If Alert RPV Pressure High High</i>
-		<TickBox
-			item="A3-5"
-			action="Press"
-			indent={true}
-		/>
+		<TickBox item="A3-5" action="Press" indent={true} />
 		<TickBox item="All Relief Valves" action="Enable" indent />
 		<TickBox item="Turbine A & B Bypass Valves" action="100%" indent />
 	</div>
@@ -48,11 +43,7 @@ headerConfig.set({
 		<TickBox item="Control Rods" action="Insert as Required" indent />
 		<br />
 		<i>If Alert RPV Temperature High High</i>
-		<TickBox
-			item="A3-5"
-			action="Press"
-			indent={true}
-		/>
+		<TickBox item="A3-5" action="Press" indent={true} />
 		<TickBox item="Main Circulation Pumps A1 & A2" action="Enable" indent />
 		<TickBox item="Main Circulation Pumps B1, B2, C1, C2" action="Disable" indent />
 		<TickBox item="Main Circulation Pumps A1 & A2" action="Speed 3" indent />

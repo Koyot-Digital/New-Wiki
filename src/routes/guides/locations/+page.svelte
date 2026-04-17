@@ -8,14 +8,15 @@ const pageMeta = getPageMeta('/guides/locations/')
 headerConfig.set({
 	heroImg: hero,
 	title: 'Locations',
-	catchphrase: pageMeta.tagline ?? 'The facility is vast and can be disorienting for visitors to navigate in. Use this guide to find the locations listed here.'
+	catchphrase:
+		pageMeta.tagline ??
+		'The facility is vast and can be disorienting for visitors to navigate in. Use this guide to find the locations listed here.',
 })
 </script>
 
 <svelte:head>
 	<title>{pageMeta.title}</title>
 </svelte:head>
-
 
 <div class="m-5">
 	<div class="join join-vertical w-full">
@@ -181,4 +182,3 @@ headerConfig.set({
 		</div>
 	</div>
 </div>
-

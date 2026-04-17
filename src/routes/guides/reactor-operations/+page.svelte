@@ -9,8 +9,10 @@ const pageMeta = getPageMeta('/guides/reactor-operations/')
 headerConfig.set({
 	heroImg: headerImg,
 	title: 'Oakridge Nuclear Power Station',
-	catchphrase: pageMeta.tagline ?? 'Experience the challenges and responsibilities of managing a nuclear power plant in this immersive Roblox game.',
-	button: 'https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station'
+	catchphrase:
+		pageMeta.tagline ??
+		'Experience the challenges and responsibilities of managing a nuclear power plant in this immersive Roblox game.',
+	button: 'https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station',
 })
 </script>
 

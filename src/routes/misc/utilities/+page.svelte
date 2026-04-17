@@ -22,7 +22,7 @@ const pageMeta = getPageMeta('/misc/utilities/')
 headerConfig.set({
 	heroImg: hero,
 	title: 'Utilities',
-	catchphrase: pageMeta.tagline ?? 'Helpful tools for the wiki'
+	catchphrase: pageMeta.tagline ?? 'Helpful tools for the wiki',
 })
 
 function runCalculationTurbine() {
@@ -74,7 +74,6 @@ runCalculationTurbine()
 <svelte:head>
 	<title>{pageMeta.title}</title>
 </svelte:head>
-
 
 <div class="m-5">
 	<!-- Turbine Calculator -->
@@ -284,4 +283,3 @@ runCalculationTurbine()
 		</div>
 	</div>
 </div>
-
